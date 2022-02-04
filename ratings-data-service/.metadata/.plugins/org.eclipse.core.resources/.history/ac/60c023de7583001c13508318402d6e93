@@ -1,0 +1,14 @@
+package com.ratingdata.resources;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.ratingdata.models.Rating;
+
+public class RatingDataResources {
+	
+	
+	public Rating getRating(@PathVariable("movieId") String movieId) {
+		return new Rating(movieId, 4);
+	
+	}
+}
